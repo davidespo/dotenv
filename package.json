@@ -1,0 +1,41 @@
+{
+  "name": "@de44/dotenv",
+  "version": "0.0.1",
+  "description": "A simple dotenv library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "de44",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/de44/dotenv"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "dev": "tsup --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:verbose": "jest --verbose",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/lodash": "^4.17.20",
+    "@types/node": "^24.1.0",
+    "jest": "^30.0.5",
+    "jest-environment-node": "^30.0.5",
+    "ts-jest": "^29.4.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "zod": "^4.0.10"
+  }
+}
