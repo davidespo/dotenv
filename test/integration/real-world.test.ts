@@ -1,11 +1,11 @@
 import { jest, describe, it, expect, beforeEach, afterEach } from "@jest/globals";
 import fs from "fs/promises";
 import { z } from "zod";
-import { Dotenv } from "../src/Dotenv";
+import { Dotenv } from "../../src/Dotenv";
 
 const mockReadFile = fs.readFile as jest.MockedFunction<typeof fs.readFile>;
 
-describe("Dotenv Integration Tests", () => {
+describe("Dotenv Real-world Integration Tests", () => {
   const originalEnv = { ...process.env };
 
   beforeEach(() => {

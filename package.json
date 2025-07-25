@@ -1,7 +1,7 @@
 {
   "name": "@de44/dotenv",
-  "version": "0.0.1",
-  "description": "A simple dotenv library",
+  "version": "0.1.0",
+  "description": "A TypeScript-first environment variable loader with Zod schema validation and multi-line string support",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "de44",

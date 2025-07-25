@@ -1,7 +1,7 @@
 import { jest, describe, it, expect } from "@jest/globals";
 import fs from "fs/promises";
 import { z } from "zod";
-import { Dotenv } from "../src/Dotenv";
+import { Dotenv } from "../../src/Dotenv";
 
 const mockReadFile = fs.readFile as jest.MockedFunction<typeof fs.readFile>;
 

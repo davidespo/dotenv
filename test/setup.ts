@@ -4,6 +4,8 @@ import { jest } from "@jest/globals";
 // Mock fs/promises for file operations
 jest.mock("fs/promises", () => ({
   readFile: jest.fn(),
+  writeFile: jest.fn(),
+  unlink: jest.fn(),
 }));
 
 // Mock console methods to avoid noise in tests
